@@ -1,0 +1,8 @@
+svg rect {
+  fill: skyblue;
+}
+
+svg text {
+  fill: black;
+  font: 15px;
+}
