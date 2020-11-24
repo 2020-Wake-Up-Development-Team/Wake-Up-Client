@@ -38,6 +38,20 @@ export const search = styled.input.attrs({
   border: none;
   border-bottom: 2px solid #bdb08d;
 `;
+export const headerBox = styled.div`
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+`;
+export const logo = styled.img`
+  width: 50px;
+  height: 50px;
+`;
+
+export const project = styled.p`
+  font-size: 20px;
+  font-weight: bold;
+`;
 export const rankingBox = styled.div`
   margin: 0px 100px 0px 100px;
   width: 80%;
@@ -104,7 +118,7 @@ export const userContainer = styled.div`
 `;
 
 export const profileBox = styled.div`
-  width: 40%;
+  width: 42%;
   height: 100px;
   margin-top: 20px;
 `;
@@ -117,8 +131,8 @@ export const userImg = styled.img`
 export const userInfo = styled.div`
   display: inline-block;
   clear: both;
-  margin-left: 35px;
-  line-height: 35px;
+  margin: 10px 0px 0px 17px;
+  line-height: 32px;
 `;
 
 export const userName = styled.span`
@@ -145,6 +159,16 @@ export const graphValue = styled.div`
   width: ${(props) => props.width};
   height: 40px;
   margin: 10px 0px 10px 0px;
+  @keyframes appear {
+    from {
+      width: 0;
+    }
+    to {
+      width: ${(props) => props.width}px;
+    }
+  }
+  animation-name: appear;
+  animation-duration: 2s;
 `;
 
 export const inUser = styled(userInfo)`
