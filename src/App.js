@@ -15,6 +15,11 @@ function App() {
             render={() => <Ranking baseUrl={baseUrl} />}
           />
           <Route exact path="/data" render={() => <Data baseUrl={baseUrl} />} />
+          {/* <Route
+            exact
+            path="/search"
+            render={() => <Data baseUrl={baseUrl} />}
+          /> */}
         </Switch>
       </Router>
     </div>

@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./style";
 import user from "./profile.png";
 import { useHistory } from "react-router-dom";
 
 const User = () => {
+  const [graphWidth, setGrapWidth] = useState(`120px`);
   const history = useHistory();
-  const value = 140; //props.concentration
-  const width = `${value}px`;
   const name = "홍길동",
     number = 21,
     id = "hoong",
@@ -23,7 +22,9 @@ const User = () => {
       },
     });
   };
-
+  useEffect(() => {
+    console.log(graphWidth);
+  }, []);
   return (
     <React.Fragment>
       <S.userContainer onClick={detailMove}>
@@ -39,33 +40,81 @@ const User = () => {
           </S.userInfo>
         </S.profileBox>
         <S.profileGraph>
-          <S.graphValue width={width}>
+          <S.graphValue width={"100px"}>
             <S.value>10</S.value>
           </S.graphValue>
-        </S.profileGraph>
-      </S.userContainer>
-      <S.userContainer>
-        <S.profileBox>
-          <S.userImg src={user} />
-          <S.userInfo>
-            <S.userName>31홍길동</S.userName>
-            <S.userId>hong</S.userId>
-          </S.userInfo>
-        </S.profileBox>
-        <S.profileGraph>
-          <S.graphValue width></S.graphValue>
         </S.profileGraph>
       </S.userContainer>
       <S.userContainer onClick={detailMove}>
         <S.profileBox>
           <S.userImg src={user} />
           <S.userInfo>
-            <S.userName>31홍길동</S.userName>
-            <S.userId>hong</S.userId>
+            <S.userName>
+              {number}
+              {name}
+            </S.userName>
+            <S.userId>{id}</S.userId>
+            <S.school>{school}</S.school>
           </S.userInfo>
         </S.profileBox>
         <S.profileGraph>
-          <S.graphValue width></S.graphValue>
+          <S.graphValue width={"120px"}>
+            <S.value>20</S.value>
+          </S.graphValue>
+        </S.profileGraph>
+      </S.userContainer>
+      <S.userContainer onClick={detailMove}>
+        <S.profileBox>
+          <S.userImg src={user} />
+          <S.userInfo>
+            <S.userName>
+              {number}
+              {name}
+            </S.userName>
+            <S.userId>{id}</S.userId>
+            <S.school>{school}</S.school>
+          </S.userInfo>
+        </S.profileBox>
+        <S.profileGraph>
+          <S.graphValue width={"140px"}>
+            <S.value>30</S.value>
+          </S.graphValue>
+        </S.profileGraph>
+      </S.userContainer>
+      <S.userContainer onClick={detailMove}>
+        <S.profileBox>
+          <S.userImg src={user} />
+          <S.userInfo>
+            <S.userName>
+              {number}
+              {name}
+            </S.userName>
+            <S.userId>{id}</S.userId>
+            <S.school>{school}</S.school>
+          </S.userInfo>
+        </S.profileBox>
+        <S.profileGraph>
+          <S.graphValue width={"160px"}>
+            <S.value>40</S.value>
+          </S.graphValue>
+        </S.profileGraph>
+      </S.userContainer>
+      <S.userContainer onClick={detailMove}>
+        <S.profileBox>
+          <S.userImg src={user} />
+          <S.userInfo>
+            <S.userName>
+              {number}
+              {name}
+            </S.userName>
+            <S.userId>{id}</S.userId>
+            <S.school>{school}</S.school>
+          </S.userInfo>
+        </S.profileBox>
+        <S.profileGraph>
+          <S.graphValue width={"200px"}>
+            <S.value>50</S.value>
+          </S.graphValue>
         </S.profileGraph>
       </S.userContainer>
     </React.Fragment>

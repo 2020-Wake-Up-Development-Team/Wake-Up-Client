@@ -22,6 +22,11 @@ const Circle = () => {
       <S.circleBox>
         <Doughnut
           options={{
+            // title: {
+            //   display: true,
+            //   text: "카테고리 별",
+            //   fontSize: 20,
+            // },
             legend: {
               display: true,
               position: "right",

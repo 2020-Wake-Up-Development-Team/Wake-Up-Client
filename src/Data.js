@@ -43,8 +43,9 @@ const Data = (baseUrl) => {
               <S.school>{location.state.school}</S.school>
             </S.inUser>
           </S.profileContainer>
+
           <S.dataContainer>
-            <S.title>{location.state.name} 님의 수업 집중도 통계 자료</S.title>
+            <S.title>나의 집중도 통계 자료</S.title>
             <Circle />
             <Chart />
           </S.dataContainer>

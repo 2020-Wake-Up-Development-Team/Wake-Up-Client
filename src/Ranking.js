@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import next from "./next.png";
+import logo from "./logo.png";
 import * as S from "./style";
 import User from "./User";
 
@@ -31,7 +32,12 @@ const Ranking = (baseUrl) => {
   }, [page]);
   return (
     <S.mainContainer>
-      <S.headerContainer></S.headerContainer>
+      <S.headerContainer>
+        <S.headerBox>
+          <S.logo src={logo} />
+          <S.project>Wake up!</S.project>
+        </S.headerBox>
+      </S.headerContainer>
       <S.contentContainer>
         <S.searchBox>
           <S.search onChange={searchChange} onKeyUp={userSearch} />
