@@ -5,13 +5,13 @@ import { Doughnut } from "react-chartjs-2";
 
 const Circle = () => {
   const circleData = {
-    labels: ["eat", "sleep", "phone"],
+    labels: ["concentration", "sleep", "phone", "etc"],
     datasets: [
       {
-        data: [60, 15, 25],
+        data: [30, 15, 25, 1],
         borderWidth: 2,
         hoverBorderWidth: 3,
-        backgroundColor: ["#DECBA4", "#e1eec3", "#3E5151"],
+        backgroundColor: ["#DECBA4", "#e1eec3", "#3E5151", "gray"],
         fill: true,
       },
     ],
