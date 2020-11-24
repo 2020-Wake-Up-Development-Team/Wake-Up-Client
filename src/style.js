@@ -12,7 +12,10 @@ export const headerContainer = styled.div`
 `;
 
 export const contentContainer = styled.div`
-  margin: 0px 250px 0px 250px;
+  margin: ${(props) => {
+    if (props.data) return "0px 320px 0px 320px";
+    else return "0px 250px 0px 250px";
+  }};
 `;
 
 export const searchBox = styled.div`
@@ -78,18 +81,16 @@ export const profile = styled.img`
 export const circleBox = styled.div`
   position: relative;
   height: 50vh;
-  width: 40vw;
+  width: 43vw;
   display: inline-block;
   margin-right: 100px;
 `;
 
 export const chartBox = styled.div`
   display: inline-block;
-  margin-left: 30px;
   position: relative;
   height: 65vh;
-  width: 55vw;
-  margin-left: 40px;
+  width: 45vw;
 `;
 
 export const dataContainer = styled.div`
@@ -99,8 +100,8 @@ export const dataContainer = styled.div`
 `;
 
 export const title = styled.h2`
-  margin: 0px 0px 100px 220px;
-  width: 50%;
+  margin: 0px 0px 100px 175px;
+  width: 45%;
   border-bottom: 2.4px solid gray;
 `;
 

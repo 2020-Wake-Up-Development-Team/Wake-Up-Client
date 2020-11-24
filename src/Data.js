@@ -31,7 +31,7 @@ const Data = (baseUrl) => {
   return (
     <S.mainContainer>
       {loading ? (
-        <S.contentContainer>
+        <S.contentContainer data>
           <S.profileContainer>
             <S.profile />
             <S.inUser>

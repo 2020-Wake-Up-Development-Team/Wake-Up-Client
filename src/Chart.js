@@ -34,10 +34,11 @@ const Chart = () => {
               display: true,
               text: "집중도 분석",
               fontSize: 20,
+              fontColor: "black",
             },
             legend: {
               display: true,
-              position: "right",
+              position: "bottom",
             },
           }}
         />

@@ -22,14 +22,16 @@ const Circle = () => {
       <S.circleBox>
         <Doughnut
           options={{
-            // title: {
-            //   display: true,
-            //   text: "카테고리 별",
-            //   fontSize: 20,
-            // },
+            title: {
+              display: true,
+              text: "카테고리 별",
+              fontSize: 20,
+              fontColor: "black",
+            },
             legend: {
               display: true,
-              position: "right",
+              position: "bottom",
+              align: "top",
             },
           }}
           data={circleData}
