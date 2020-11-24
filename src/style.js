@@ -47,9 +47,10 @@ export const rankingBox = styled.div`
 export const profileContainer = styled.div`
   width: 100%;
   height: 200px;
-  border: 1px solid black;
+  box-shadow: 5px 5px 10px #acacac;
   display: flex;
   margin: 50px 0px 100px 0px;
+  border-radius: 30px;
 `;
 
 export const profile = styled.img`
@@ -74,6 +75,7 @@ export const chartBox = styled.div`
   position: relative;
   height: 65vh;
   width: 55vw;
+  margin-left: 40px;
 `;
 
 export const dataContainer = styled.div`
@@ -83,7 +85,9 @@ export const dataContainer = styled.div`
 `;
 
 export const title = styled.h2`
-  margin-bottom: 50px;
+  margin: 0px 0px 100px 220px;
+  width: 50%;
+  border-bottom: 2.4px solid gray;
 `;
 
 export const userContainer = styled.div`
@@ -91,6 +95,12 @@ export const userContainer = styled.div`
   display: flex;
   border-bottom: 1px solid gray;
   cursor: pointer;
+  &:hover {
+    box-shadow: 3px 5px 10px #8a8a8a;
+    border: none;
+    index: 1;
+  }
+  padding: 15px;
 `;
 
 export const profileBox = styled.div`
@@ -107,8 +117,8 @@ export const userImg = styled.img`
 export const userInfo = styled.div`
   display: inline-block;
   clear: both;
-  margin-left: 20px;
-  line-height: 80px;
+  margin-left: 35px;
+  line-height: 35px;
 `;
 
 export const userName = styled.span`
@@ -124,22 +134,22 @@ export const userId = styled.span`
 `;
 
 export const profileGraph = styled.div`
-  width: 60%;
+  width: 50%;
   height: 60px;
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px 30px 75px;
   border-left: 1px solid black;
 `;
 
 export const graphValue = styled.div`
-  background-color: coral;
+  background-color: #d6ae76;
   width: ${(props) => props.width};
   height: 40px;
   margin: 10px 0px 10px 0px;
 `;
 
 export const inUser = styled(userInfo)`
-  line-height: 180px;
-  margin-left: 50px;
+  line-height: 35px;
+  margin: 60px 0px 0px 50px;
 `;
 
 export const profileName = styled(userName)`
@@ -150,4 +160,31 @@ export const profileId = styled(userId)`
   font-size: 20px;
 `;
 
-export const next = styled.button``;
+export const next = styled.button`
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  float: right;
+`;
+
+export const btnImg = styled.img`
+  width: 35px;
+  height: 35px;
+`;
+
+export const bottomSection = styled.div`
+  height: 200px;
+`;
+
+export const school = styled.span`
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+`;
+
+export const value = styled.p`
+  font-size: 18px;
+  float: right;
+  margin: 7px 8px 0px 0px;
+`;
